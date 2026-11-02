@@ -1,30 +1,28 @@
 # Explain Clearly
 
-[English](README.md) · [Русский](README.ru.md)
+English · [Русский](README.ru.md)
 
-This skill helps AI give clearer answers: instead of saying “cache error”, explain why you might see an old picture. And when the cause is uncertain, say so rather than presenting a guess as fact.
+**Explain Clearly helps AI give clearer explanations.** Instead of naming an error, an agent can explain what might have happened and what you can do. When the cause is unknown, it should say so rather than present a guess as fact.
 
-## What it can help with
+## Example
 
-Use it when you want an explanation in plainer language, less jargon, a different level of detail, or wording tailored to a particular audience. It can be useful for both technical subjects and everyday questions. The aim is not simply to shorten an answer, but to help a reader form an accurate picture of what is known and what is not.
+**Before:** “Cache error. Clear your cache.”
 
-For example, instead of: “The browser cache served a stale asset.”
+**After:** “Your browser may be showing a saved copy of the old picture. Clearing the cache might help it load the new one, but it will not fix a picture that is wrong on the website itself.”
 
-> Your browser may have saved an earlier copy of the picture and reused it instead of downloading the replacement. Those saved files are called the browser cache. Clearing them can make the browser download the picture again, but it will not fix an image that is wrong on the site itself.
+This is a fictional example, not a diagnosis of a particular problem. [More examples](references/examples.md).
 
-This fictional example explains the term and limits the proposed fix to one possible cause. More examples are in [references/examples.md](references/examples.md).
+## Use
 
-## Limits
+**Once:** give your agent access to [`SKILL.md`](SKILL.md) and ask: “Read this skill and explain my question using its guidance.”
 
-This skill is guidance, not a fact-checker or a guarantee of clarity, correctness, or comprehension. It cannot establish that a person understood an answer. The agent still needs to use reliable information and appropriate judgment; review consequential explanations. It does not automatically apply to every question or work in every agent. See [references/sources.md](references/sources.md) for the practitioner sources and their limits.
+**For future sessions:** ask your agent to install the entire `explain-clearly` folder, including `SKILL.md`, `references/`, and `LICENSE`. Installation depends on the agent. Do not overwrite an existing skill without checking and permission; verify that the host discovers it after installation.
 
-## Practical use
-
-For a one-off request, give your agent access to this directory or its [`SKILL.md`](SKILL.md), if it can read repository files, and ask it to use the `explain-clearly` skill. For repeated use, check your agent's documentation for its supported skill format and user-wide or project-local skill directory, then place the entire `explain-clearly` directory there without overwriting an existing one. Follow that agent's instructions to reload or start a session, and verify the skill is available. There is no single installation path or activation command shared by all agents: an installed skill's availability and whether it is loaded or selected depend on the agent and its configuration; copying files alone does not prove activation.
+For agents: distinguish one-off use from installation; check your host's documentation and report where the files were copied and whether a reload is needed. Do not claim the skill is loaded or used without verification.
 
 ### Install for Pi
 
-Pi discovers skills in `~/.agents/skills/` (user-wide) and `.agents/skills/` (project-local). Copy the **entire** `skills/explain-clearly/` directory, including `SKILL.md`, `references/`, and its license. Run these commands from the root of this repository. The user-wide version is:
+From the repository root, for the current user:
 
 ```sh
 mkdir -p ~/.agents/skills
@@ -36,10 +34,8 @@ else
 fi
 ```
 
-For a project-only installation, use `.agents/skills/` instead of `~/.agents/skills/` in both commands. If the destination already exists, do not overwrite it; inspect the files and resolve any name collision deliberately. An installed skill is not necessarily loaded into an active session: after edits, Pi documents `/reload` for reloading, and a fresh session also loads skills. Verify that `/skill:explain-clearly` is available before invoking it. These are steps to check your setup, not a claim that installation or activation has been tested on your machine.
+For a project-only installation, use `.agents/skills/` instead of `~/.agents/skills/`. After changes, Pi supports `/reload`; check that `/skill:explain-clearly` is available and inspect name-collision warnings. See the [Pi documentation](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/skills.md). Installation on your device has not been tested.
 
-See the [official Pi skills documentation](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/skills.md) for current discovery and reload behavior.
+## Limits and sources
 
-## Source and license
-
-The approach draws on practitioner writing, not controlled studies; no improvement in comprehension is guaranteed. Source notes are in [references/sources.md](references/sources.md). This skill is available under the [MIT License](LICENSE); retain the license when copying or redistributing it.
+The skill helps formulate answers, but it does not check facts or guarantee results. Review important explanations. [Sources](references/sources.md) · [MIT License](LICENSE)
