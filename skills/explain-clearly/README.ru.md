@@ -26,7 +26,7 @@
 
 ```sh
 mkdir -p ~/.agents/skills
-if [ ! -e ~/.agents/skills/explain-clearly ]; then
+if [ ! -e ~/.agents/skills/explain-clearly ] && [ ! -L ~/.agents/skills/explain-clearly ]; then
   cp -R skills/explain-clearly ~/.agents/skills/explain-clearly
 else
   echo 'Папка уже существует; сравните содержимое и получите разрешение перед заменой.' >&2

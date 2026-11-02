@@ -26,7 +26,7 @@ From the repository root, for the current user:
 
 ```sh
 mkdir -p ~/.agents/skills
-if [ ! -e ~/.agents/skills/explain-clearly ]; then
+if [ ! -e ~/.agents/skills/explain-clearly ] && [ ! -L ~/.agents/skills/explain-clearly ]; then
   cp -R skills/explain-clearly ~/.agents/skills/explain-clearly
 else
   echo 'Destination exists; compare contents and get permission before replacing.' >&2
