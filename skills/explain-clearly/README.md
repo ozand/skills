@@ -2,7 +2,7 @@
 
 [English](README.md) · [Русский](README.ru.md)
 
-This skill helps AI explain things more clearly: answer your question, describe the steps needed to understand it, and avoid presenting guesses as facts. It also keeps warnings when they are needed, rather than dropping them for simplicity.
+This skill helps AI give clearer answers: instead of saying “cache error”, explain why you might see an old picture. And when the cause is uncertain, say so rather than presenting a guess as fact.
 
 ## What it can help with
 
