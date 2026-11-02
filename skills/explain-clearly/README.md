@@ -2,7 +2,7 @@
 
 [English](README.md) · [Русский](README.ru.md)
 
-A writing skill for AI agents: guidance for making explanations easier to follow without making them less accurate. It focuses on the reader's actual question, explains the important link between cause and result, and keeps uncertainty and safety boundaries visible.
+This skill helps AI explain things more clearly: answer your question, describe the steps needed to understand it, and avoid presenting guesses as facts. It also keeps warnings when they are needed, rather than dropping them for simplicity.
 
 ## What it can help with
 
