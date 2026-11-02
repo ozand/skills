@@ -24,6 +24,6 @@ else
 fi
 ```
 
-For project-local installation, use `.agents/skills/` instead of `~/.agents/skills/`. Check the destination first; if `explain-clearly` already exists, do not overwrite it. A skill-name collision may cause Pi to select another skill, so inspect its startup diagnostics. A skill-name collision may cause Pi to select another skill, so inspect its startup diagnostics. In an active session, run `/reload` after edits, then verify `/skill:explain-clearly` is available; a fresh session also reloads skills. Enter `/skill:explain-clearly` to invoke it manually. These are verification steps, not a claim that installation has been tested on your machine.
+For project-local installation, use `.agents/skills/` instead of `~/.agents/skills/`. Check the destination first; if `explain-clearly` already exists, do not overwrite it. A skill-name collision may cause Pi to select another skill, so inspect its startup diagnostics. In an active session, run `/reload` after edits, then verify `/skill:explain-clearly` is available; a fresh session also reloads skills. Enter `/skill:explain-clearly` to invoke it manually. These are verification steps, not a claim that installation has been tested on your machine.
 
 See the [Pi skills documentation](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/skills.md) for current discovery and reload behavior.
