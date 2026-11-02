@@ -2,7 +2,7 @@
 
 [English](README.md) · [Русский](README.ru.md)
 
-A writing skill for AI agents: guidance for making explanations easier to follow without making them less accurate. It focuses on the reader's actual question, explains the important link between cause and result, and keeps uncertainty and safety boundaries visible.
+This skill helps AI give clearer answers: instead of saying “cache error”, explain why you might see an old picture. And when the cause is uncertain, say so rather than presenting a guess as fact.
 
 ## What it can help with
 
