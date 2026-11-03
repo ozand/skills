@@ -36,6 +36,8 @@ else
 fi
 ```
 
+If copying fails or is interrupted, the destination may contain an incomplete installation. Inspect it before removing it or retrying; do not delete files you need to keep.
+
 For a project-only installation, use `.agents/skills/` instead of `~/.agents/skills/`. After changes, Pi supports `/reload`; check that `/skill:explain-clearly` is available and inspect name-collision warnings. See the [Pi documentation](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/skills.md). Installation on your device has not been tested.
 
 ## Limits and sources
