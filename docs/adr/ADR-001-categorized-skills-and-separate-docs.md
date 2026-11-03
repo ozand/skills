@@ -1,10 +1,12 @@
 # ADR-001: Categorize skills and separate reader documentation
 
-**Status**: Proposed
+**Status**: Accepted
 **Date**: 2026-11-03
 **Authors**: Pi assistant
 **Supersedes**: None
 **Related**: Issue #10
+
+Delegated technical acceptance follows independent design review `90d6b4fd` and implementation review `7e18025f` of candidate `a396ba1313147082702ad28e916701f498a0e1f3`. This acceptance is not a claim of installation or activation.
 
 ## Context
 
