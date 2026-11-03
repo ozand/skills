@@ -4,6 +4,8 @@ English · [Русский](explain-clearly.ru.md)
 
 **Explain Clearly helps AI give clearer explanations.** Instead of naming an error, an agent can explain what might have happened and what you can do. When the cause is unknown, it should say so rather than present a guess as fact.
 
+**Skill files:** [open the actual skill folder](../../skills/communication/explain-clearly/) · [read `SKILL.md`](../../skills/communication/explain-clearly/SKILL.md)
+
 ## Example
 
 **Before:** “Cache error. Clear your cache.”
@@ -16,7 +18,7 @@ This is a fictional example, not a diagnosis of a particular problem. [More exam
 
 **Once:** give your agent access to [`SKILL.md`](../../skills/communication/explain-clearly/SKILL.md) and ask: “Read this skill and explain my question using its guidance.”
 
-**For future sessions:** ask your agent to install the entire `explain-clearly` folder, including `SKILL.md`, `references/`, and `LICENSE`. Installation depends on the agent. Do not overwrite an existing skill without checking and permission; verify that the host discovers it after installation.
+**For future sessions:** ask your agent to install the actual `explain-clearly` folder linked above, including `SKILL.md` and `references/`, and copy the repository-root `LICENSE` alongside it. Installation depends on the agent. Do not overwrite an existing skill without checking and permission; verify that the host discovers it after installation.
 
 For agents: distinguish one-off use from installation; check your host's documentation and report where the files were copied and whether a reload is needed. Do not claim the skill is loaded or used without verification.
 
