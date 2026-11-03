@@ -1,9 +1,9 @@
 # ADR-001: Categorize skills and separate reader documentation
 
-**Status**: Proposed  
-**Date**: 2026-11-03  
-**Authors**: Pi assistant  
-**Supersedes**: None  
+**Status**: Proposed
+**Date**: 2026-11-03
+**Authors**: Pi assistant
+**Supersedes**: None
 **Related**: Issue #10
 
 ## Context
