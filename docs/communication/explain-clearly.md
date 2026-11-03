@@ -27,7 +27,7 @@ From the repository root, for the current user:
 ```sh
 mkdir -p ~/.agents/skills
 if [ ! -e ~/.agents/skills/explain-clearly ] && [ ! -L ~/.agents/skills/explain-clearly ]; then
-  cp -R skills/communication/explain-clearly ~/.agents/skills/explain-clearly
+  cp -R skills/communication/explain-clearly ~/.agents/skills/explain-clearly && cp LICENSE ~/.agents/skills/explain-clearly/LICENSE
 else
   echo 'Destination exists; compare contents and get permission before replacing.' >&2
   exit 1
@@ -38,4 +38,4 @@ For a project-only installation, use `.agents/skills/` instead of `~/.agents/ski
 
 ## Limits and sources
 
-The skill helps formulate answers, but it does not check facts or guarantee results. Review important explanations. [Sources](../../skills/communication/explain-clearly/references/sources.md) · [MIT License](../../skills/communication/explain-clearly/LICENSE)
+The skill helps formulate answers, but it does not check facts or guarantee results. Review important explanations. [Sources](../../skills/communication/explain-clearly/references/sources.md) · [MIT License](../../LICENSE)

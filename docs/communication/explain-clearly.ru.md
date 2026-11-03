@@ -27,7 +27,7 @@
 ```sh
 mkdir -p ~/.agents/skills
 if [ ! -e ~/.agents/skills/explain-clearly ] && [ ! -L ~/.agents/skills/explain-clearly ]; then
-  cp -R skills/communication/explain-clearly ~/.agents/skills/explain-clearly
+  cp -R skills/communication/explain-clearly ~/.agents/skills/explain-clearly && cp LICENSE ~/.agents/skills/explain-clearly/LICENSE
 else
   echo 'Папка уже существует; сравните содержимое и получите разрешение перед заменой.' >&2
   exit 1
@@ -38,4 +38,4 @@ fi
 
 ## Ограничения и источники
 
-Skill помогает формулировать ответы, но не проверяет факты и не гарантирует результат. Важные объяснения проверяйте. [Источники подхода](../../skills/communication/explain-clearly/references/sources.md) · [Лицензия MIT](../../skills/communication/explain-clearly/LICENSE)
+Skill помогает формулировать ответы, но не проверяет факты и не гарантирует результат. Важные объяснения проверяйте. [Источники подхода](../../skills/communication/explain-clearly/references/sources.md) · [Лицензия MIT](../../LICENSE)
