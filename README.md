@@ -1,12 +1,12 @@
 # Skills
 
-English · [Русский](README.ru.md)
+English · [Русский](docs/readme/README_ru.md)
 
 An open collection of skills for AI agents.
 
 ## Skills
 
-- [**explain-clearly**](skills/explain-clearly/) — explain complex topics clearly without losing important meaning or uncertainty.
+- [**explain-clearly**](docs/communication/explain-clearly.md) — explain complex topics clearly without losing important meaning or uncertainty.
 
 ## Use
 
